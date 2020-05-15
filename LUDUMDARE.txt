@@ -1,0 +1,72 @@
+LUDUMDARE
+
+TEMA
+[Keep it Alive]
+
+GERADOR DE MECHANICA - Extra https://www.michaelhemingway.com/gamegen/
+[Escort nothing with RNG.]
+
+IDEIAS
+Jogo ao estilo Nuzlocke, você não pode perder boneco/bicho se não ele acaba
+
+Jogo de escoltar alguma coisa, enquanto você se defende de algo (Zero player?)
+    Você precisa chegar ao ponto X, proteger uma carroagem
+    Antes de começar o mapa, você escolhe onde proteger
+    Talvez você possa definir como cada proteção irá reagir
+    Antes de cada rodada, itens aleatórios (Ou quase), e durante o jogo ele tem direito a X ações no cenário.
+
+
+TENTANDO UTILIZAR/FAZER
+Um jogo 3D
+Utilizando ProBuilder para arrumar os objetos - https://www.youtube.com/watch?v=Ta3HkV_qHTc
+Utilizando PolyBrusher para arrumar o terreno - 
+
+PROGRESSO
+- Modelado a base do escoltado
+- Ideia estabelecida
+- O carrinho rodar até chegar no target
+- Novo target ser estabelecido ao chegar nele
+
+--TODO: Som
+    -- Explosão
+    -- Pulo
+    -- Refletir
+    -- Canhão
+    -- Particula
+
+--TODO: Modelagem
+    -- Pessoa
+    -- Carroagem
+    -- Carro normal
+    -- Carro canhão
+    -- Carro proteção
+
+--TODO: Juiciness
+    -- Camera: Cada impacto faz a câmera se mexer
+    -- Explosões: Adicionar partículas para cada impacto
+
+- DONE: Implementar o player do carrinho
+    - Player: Vai controlar um mini carrinho SUPER ágil, que irá refletir outros inimigos e projeteis.
+    - Player: Fácil de controlar, não precisa ser tão complexo como o escoltado
+    - Player: Poderá até mesmo pular para refletir ataques
+    - Player: Refletir projéteis
+    - Player: Derrotar inimigos os atropelando
+
+- DONE: Escolta
+    - Ataque: Ao tocar nas pessoas, ele o joga longe
+    - Ataque: Ao tocar nos carrinhos, ele o joga longe
+    - Ataque: O projétil ficando na área dele, é possível "teleportar" ao projétil e bloquear. Tempo fica lento.
+    - Ataque: O projétil ficando na área dele, é possível "teleportar" ao projétil e refletir ao seu "pai" no timing correto. Tempo fica lento.
+
+--TODO: Escoltado
+    --Escolta: PowerUps que ficam ao redor do veículo com o tempo, como barras de proteção que ficam rodando e poder repulsar ataques.
+
+- DONE: Implementar inimigos do carrinho
+    - Inimigo: Pessoas que tentam atacar a carroagem
+        - Implementar o ataque
+    - Inimigo: Pequenos carrinhos de baixa velocidade que tentam bater na escoltado
+        - Implementar o ataque
+    - Inimigo: Canhões que demoram a atirar, mas quando o fazem são mais difíceis de defender
+        - Implementar o ataque
+
+--TODO: Implementar menu
